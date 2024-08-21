@@ -1,43 +1,43 @@
-
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
 const LoginScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Login</Text>
+      <Text style={styles.title}>Giris Yap</Text>
       
       <TextInput
         style={styles.input}
-        placeholder="Email"
+        placeholder="E-posta"
         keyboardType="email-address"
         autoCapitalize="none"
       />
-      
+
       <TextInput
         style={styles.input}
-        placeholder="Password"
+        placeholder="Sijfe"
         secureTextEntry
       />
-      
+
       <View style={styles.rememberForgotContainer}>
         <TouchableOpacity>
-          <Text style={styles.rememberMeText}>Remember me</Text>
+          <Text style={styles.rememberMeText}>Beni hatĭla</Text>
         </TouchableOpacity>
         <TouchableOpacity>
-          <Text style={styles.forgotPasswordText}>Forgot Password?</Text>
+          <Text style={styles.forgotPasswordText}>P�flmi Unuttum?</Text>
         </TouchableOpacity>
       </View>
 
       <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Login</Text>
+        <Text style={styles.buttonText}>Giris Yap</Text>
       </TouchableOpacity>
-      
+
       <TouchableOpacity onPress={() => navigation.navigate('SignUpScreen')}>
-        <Text style={styles.signUpText}>Don't have an account? Sign up</Text>
+        <Text style={styles.signUpText}>Hesaby’z
+    xk mu? Kaydolun</Text>
       </TouchableOpacity>
     </View>
-  );
+);
 };
 
 const styles = StyleSheet.create({
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     color: '#000',
     textAlign: 'center',
     marginBottom: 40,
-  },
+  },  
   input: {
     height: 50,
     borderColor: '#ddd',
